@@ -1,11 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+       <StatusBar style="auto" />
+       <SafeAreaView>
+            <View style={styles.countwrapper}>
+              <Text style={{fontWeight: "600"}}>1/10</Text>
+            </View>
+
+            <View style={styles.questionwrapper}>
+
+            </View>
+       </SafeAreaView>
     </View>
   );
 }
@@ -13,8 +21,28 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#e4e4e4',
+  },
+  countwrapper:{
+    width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingVertical: 50
+  },
+  questionwrapper: {
+    marginTop: 60,
+    width: "100%",
+    height: 180,
+    borderRadius: 20,
+    backgroundColor: "#fff",
+    padding: 16,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 0,
+    },
+    shadowOpacity: 0.4,
+    shadowRadius: 5,
+    alignItems: "center",
   },
 });
