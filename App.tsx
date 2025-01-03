@@ -22,12 +22,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#e4e4e4',
+    padding: 20,
   },
   countwrapper:{
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 50
+    paddingVertical: 10
   },
   questionwrapper: {
     marginTop: 60,
